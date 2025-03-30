@@ -1,17 +1,53 @@
+int led1pin = 15;
+int led2pin = 13;
+int led3pin = 11;
+
 void setup() {
   Serial.begin(9600);
-  pinMode(15,OUTPUT);
+  pinMode(led1pin,OUTPUT);
+  pinMode(led2pin,OUTPUT);
+  pinMode(led3pin,OUTPUT);
+
 }
 
 void loop() {
-  byte inByte;
-  if(Serial.available())
+  if(Serial.available() > 0)
   {
-    inByte = Serial.read();
-    for(byte i = 1; i <= inByte*2; i++)
-    {
-      digitalWrite(15, !digitalRead(15));
-      delay(200);
+    byte HOME_ACTION = Serial.read();
+    switch (HOME_ACTION){
+      case 1:
+        Serial.print("Code detected");
+        if (led1pin == LOW){
+          digitalWrite(led1pin, HIGH);
+          delay(1500);
+        }
+        else{
+          digitalWrite(led1pin, LOW);
+          delay(1500);
+        }
+        break;
+      case 2:
+        Serial.print("Code detected");
+        if (led2pin == LOW){
+          digitalWrite(led2pin, HIGH);
+          delay(1500);
+        }
+        else{
+          digitalWrite(led2pin, LOW);
+          delay(1500);
+        }
+        break;
+      case 3:
+        Serial.print("Code detected");
+        if (led3pin == LOW){
+          digitalWrite(led3pin, HIGH);
+          delay(1500);
+        }
+        else{
+          digitalWrite(led3pin, LOW);
+          delay(1500);
+        }
+        break;
     }
   }
 }

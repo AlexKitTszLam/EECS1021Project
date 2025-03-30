@@ -20,6 +20,6 @@ public class Main {
             sp.getOutputStream().write(blink_num.byteValue());
         }
         input.close();
-
+        sp.closePort();
     }
 }
