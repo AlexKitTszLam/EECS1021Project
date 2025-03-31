@@ -17,7 +17,7 @@ void loop() {
     switch (HOME_ACTION){
       case 1:
         Serial.print("Code detected");
-        if (led1pin == LOW){
+        if (digitalRead(led1pin == LOW)){
           digitalWrite(led1pin, HIGH);
           delay(1500);
         }
@@ -28,7 +28,7 @@ void loop() {
         break;
       case 2:
         Serial.print("Code detected");
-        if (led2pin == LOW){
+        if (digitalRead(led2pin == LOW)){
           digitalWrite(led2pin, HIGH);
           delay(1500);
         }
@@ -39,7 +39,7 @@ void loop() {
         break;
       case 3:
         Serial.print("Code detected");
-        if (led3pin == LOW){
+        if (digitalRead(led3pin == LOW)){
           digitalWrite(led3pin, HIGH);
           delay(1500);
         }
