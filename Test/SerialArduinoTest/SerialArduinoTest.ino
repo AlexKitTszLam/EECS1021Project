@@ -2,6 +2,10 @@ int led1pin = 15;
 int led2pin = 13;
 int led3pin = 11;
 
+//Sound sensor pin
+int soundPin = A0;
+
+
 void setup() {
   Serial.begin(9600);
   pinMode(led1pin,OUTPUT);
