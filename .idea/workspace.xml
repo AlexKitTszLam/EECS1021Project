@@ -1,63 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da2af09d-8d5a-4f61-b99c-74a7ab2eec66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EECS1021Project.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/GunProject/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/src/main/java/org/example/NewJFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/JavaSerialTest/src/main/java/org/example/NewJFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/SerialArduinoTest/.theia/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/Test/SerialArduinoTest/SerialArduinoTest.ino" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/VoiceRecognitionGun.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Project/VoiceRecognitionGun/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/src/main/java/org/example/NewJFrame.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/src/main/java/org/example/NewJFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/src/main/java/org/example/Peak.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/com/mycompany/turnaledon/NewJFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/JavaSerialTest/target/classes/org/example/NewJFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/SerialArduinoTest/SerialArduinoTest.ino" beforeDir="false" />
-    </list>
+    <list default="true" id="da2af09d-8d5a-4f61-b99c-74a7ab2eec66" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,23 +10,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2v8YqpTbNepqycmOimNHH0xk53M" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alex_\OneDrive\Documents\GitHub\EECS1021Project" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
