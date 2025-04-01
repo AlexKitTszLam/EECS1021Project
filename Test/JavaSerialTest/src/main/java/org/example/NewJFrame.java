@@ -2,18 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.turnaledon;
+package org.example;
 import com.fazecast.jSerialComm.SerialPort;
 import java.io.IOException;
-import java.util.Scanner;
 
 /**
  *
  * @author alex_
  */
 public class NewJFrame extends javax.swing.JFrame {
-    private final SerialPort sp = SerialPort.getCommPort("COM10");
-
+    private final SerialPort sp = SerialPort.getCommPort("COM4");
     /**
      * Creates new form NewJFrame
      */
@@ -23,6 +21,8 @@ public class NewJFrame extends javax.swing.JFrame {
         if (!sp.openPort()) {
             System.out.println("ERROR: This COM port not available.");
             System.exit(1);
+        }else {
+            System.out.println("COM4 opened successfully.");
         }
     }
     public NewJFrame() {
