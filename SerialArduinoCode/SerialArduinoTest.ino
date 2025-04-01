@@ -12,7 +12,8 @@ void setup() {
 
 void loop() {
   if(Serial.available() > 0) {
-    byte HOME_ACTION = Serial.read();
+    char receivedNum = Serial.read();
+    byte HOME_ACTION = receivedNum - '0';
     Serial.print("Received: ");
     Serial.println(HOME_ACTION);  // Debugging statement to check what is received
     switch (HOME_ACTION) {
