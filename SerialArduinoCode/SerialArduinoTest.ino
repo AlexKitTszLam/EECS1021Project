@@ -11,42 +11,37 @@ void setup() {
 }
 
 void loop() {
-  if(Serial.available() > 0)
-  {
+  if(Serial.available() > 0) {
     byte HOME_ACTION = Serial.read();
-    switch (HOME_ACTION){
+    Serial.print("Received: ");
+    Serial.println(HOME_ACTION);  // Debugging statement to check what is received
+    switch (HOME_ACTION) {
       case 1:
-        Serial.print("Code detected");
-        if (digitalRead(led1pin == LOW)){
+        Serial.println("Toggling LED 1");
+        if (digitalRead(led1pin) == LOW) {
           digitalWrite(led1pin, HIGH);
-          delay(1500);
-        }
-        else{
+        } else {
           digitalWrite(led1pin, LOW);
-          delay(1500);
         }
         break;
       case 2:
-        Serial.print("Code detected");
-        if (digitalRead(led2pin == LOW)){
+        Serial.println("Toggling LED 2");
+        if (digitalRead(led2pin) == LOW) {
           digitalWrite(led2pin, HIGH);
-          delay(1500);
-        }
-        else{
+        } else {
           digitalWrite(led2pin, LOW);
-          delay(1500);
         }
         break;
       case 3:
-        Serial.print("Code detected");
-        if (digitalRead(led3pin == LOW)){
+        Serial.println("Toggling LED 3");
+        if (digitalRead(led3pin) == LOW) {
           digitalWrite(led3pin, HIGH);
-          delay(1500);
-        }
-        else{
+        } else {
           digitalWrite(led3pin, LOW);
-          delay(1500);
         }
+        break;
+      default:
+        Serial.println("Unknown command received.");
         break;
     }
   }
