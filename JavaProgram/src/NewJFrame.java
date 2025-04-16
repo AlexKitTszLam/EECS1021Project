@@ -152,14 +152,17 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void L3SoundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_L3SoundActionPerformed
         // TODO add your handling code here:
+        sendByteData((byte)6);
     }//GEN-LAST:event_L3SoundActionPerformed
 
     private void L1SoundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_L1SoundActionPerformed
         // TODO add your handling code here:
+        sendByteData((byte)5);
     }//GEN-LAST:event_L1SoundActionPerformed
 
     private void L2SoundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_L2SoundActionPerformed
         // TODO add your handling code here:
+        sendByteData((byte)4);
     }//GEN-LAST:event_L2SoundActionPerformed
 
     private void lightTwoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lightTwoButtonActionPerformed

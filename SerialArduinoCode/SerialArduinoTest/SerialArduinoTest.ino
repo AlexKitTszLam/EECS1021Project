@@ -12,7 +12,7 @@ int rotationSensorPin = A1;  //pin32
 int lightLevel;              //used sensor goes from 0 -> 1023
 int pwmValue;
 
-bool led1Toggle = true, led2Toggle = true, led3Toggle = true;
+bool led1Toggle = false, led2Toggle = false, led3Toggle = false;
 
 
 //clapper toggle vars
@@ -32,10 +32,10 @@ void loop() {
   //serial inputs
   if (Serial.available() > 0) {
     char receivedNum = Serial.read();
-    byte HOME_ACTION = receivedNum - '0';
+    byte HOME_ACTION = receivedNum;
     Serial.print("Received: ");
     Serial.println(HOME_ACTION);  // Debugging statement to check what is received
-    switch (HOME_ACTION) {
+    switch (receivedNum) {
       case 1:
         Serial.println("Toggling LED 1");
         led1Toggle = !led1Toggle;
@@ -69,7 +69,6 @@ void loop() {
 
   //PWM Switches
   lightLevel = analogRead(rotationSensorPin);
-  Serial.println(lightLevel);
   pwmValue = map(lightLevel, 0, 1023, 0, 255); //convert signal from 1023 max to 255 max
 
   if (led1Toggle) {
