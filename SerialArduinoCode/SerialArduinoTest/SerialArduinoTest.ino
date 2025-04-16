@@ -7,6 +7,14 @@ int soundSensorPin = A0;
 long previousClapTime = millis();
 double soundSensorReading;
 
+//pwm light control vars
+int rotationSensorPin = A1;  //pin32
+int lightLevel;              //used sensor goes from 0 -> 1023
+int pwmValue;
+
+bool led1Toggle = true, led2Toggle = true, led3Toggle = true;
+
+
 //clapper toggle vars
 bool led1Clap = false;
 bool led2Clap = false;
@@ -30,15 +38,15 @@ void loop() {
     switch (HOME_ACTION) {
       case 1:
         Serial.println("Toggling LED 1");
-        digitalWrite(led1pin, !digitalRead(led1pin));
+        led1Toggle = !led1Toggle;
         break;
       case 2:
         Serial.println("Toggling LED 2");
-        digitalWrite(led2pin, !digitalRead(led2pin));
+        led2Toggle = !led2Toggle;
         break;
       case 3:
         Serial.println("Toggling LED 3");
-        digitalWrite(led3pin, !digitalRead(led3pin));
+        led3Toggle = !led3Toggle;
         break;
 
       case 4:
@@ -59,6 +67,32 @@ void loop() {
     }
   }
 
+  //PWM Switches
+  lightLevel = analogRead(rotationSensorPin);
+  Serial.println(lightLevel);
+  pwmValue = map(lightLevel, 0, 1023, 0, 255); //convert signal from 1023 max to 255 max
+
+  if (led1Toggle) {
+    analogWrite(led1pin, pwmValue);
+  } else {
+    analogWrite(led1pin, 0);
+  }
+
+  if (led2Toggle) {
+    analogWrite(led2pin, pwmValue);
+  } else {
+    analogWrite(led2pin, 0);
+  }
+
+  if (led3Toggle) {
+    analogWrite(led3pin, pwmValue);
+  } else {
+    analogWrite(led3pin, 0);
+  }
+
+
+
+
   //sound sensor code
   soundSensorReading = analogRead(soundSensorPin);
   if (soundSensorReading > 17 && (millis() - previousClapTime > 300)) {
@@ -67,17 +101,17 @@ void loop() {
 
     // Toggle LED 1 if enabled
     if (led1Clap) {
-      digitalWrite(led1pin, !digitalRead(led1pin));
+      led1Toggle = !led1Toggle;
     }
 
     // Toggle LED 2 if enabled
     if (led2Clap) {
-      digitalWrite(led2pin, !digitalRead(led2pin));
+      led2Toggle = !led2Toggle;
     }
 
     // Toggle LED 3 if enabled
     if (led3Clap) {
-      digitalWrite(led3pin, !digitalRead(led3pin));
+      led3Toggle = !led3Toggle;
     }
   }
 }
